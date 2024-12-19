@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p{
+            display: none;
+        }
+
+        div:hover{
+            color: brown;
+            font-weight: bold;
+        }
+        div:hover > p{
+            display: block;
+            color: gold;
+            background-color: crimson;
+            width: 300px;
+            border-radius: 20px;
+            padding: 15px;
+            text-align: justify;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        PASSE O MOUSE AQUI!
+        <p> Texto Escondido <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vero eligendi voluptate exercitationem, harum ad unde. Perferendis, rerum quo vitae sequi magnam vel similique perspiciatis repellendus non, ipsa et accusamus.
+        </p>
+        
+    </div>
+    <p>Fim do Exemplo.</p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: rgb(100, 149, 237);
+    min-height: 120px; /* Altura do box */
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: rgb(255, 228, 196);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    margin-bottom: 20px;  
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.507);
+
+}
+
+body{
+    background-color: rgba(112, 128, 144, 0.479);
+}
+
+header > p{
+    color: rgb(255, 255, 254);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+main{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px; /* Largura maxima do box */
+    margin: auto;
+    background-color: white;
+    border-radius: 00px 00px 10px 10px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.507);
+
+}
+
+main > p {
+    margin-top: 10px;
+    text-align: justify;
+    text-indent: 30px; /*Espaçamento do Paragrafo. */
+    line-height: 2em; /*Espaçamento entre linhas do paragrafo */
+}
+
+main >h3{
+    background-image: linear-gradient(to right, rgb(255, 228, 196) , transparent );
+    padding: 4px;
+}
+
+footer{
+    background-color: rgb(33, 77, 160);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    line-height: 1.5em;
+    margin-top: 15px;
+    
+}

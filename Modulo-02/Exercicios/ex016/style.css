@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+        background-image: linear-gradient(150deg ,#F2BC57 20% , #BF3B3B);
+        background-attachment: fixed;
+}
+
+main {
+        background-color: white; /* Cor de fundo da area */ 
+        width: 800px; /* Tamanho da area de uso do ¨box¨ */
+        border-radius: 20px; /* Arredondamento das bordas */
+        box-shadow: 10px 10px 20px #6652408e ; /* Cria um efeito de sombra nas bordas */
+        /* 1º Numero é tamanho da sombra lateral direita.*/ 
+        /* 2º Numero é tamanho da sombra inferior.*/ 
+        /* 3º Numero é tamanho do efeito degrade*/ 
+        /* 4º Numero é a cor */ 
+        padding: 15px; /* distanciamento da borda */
+        margin: auto; /* Centralizar o conteudo no centro da página */
+
+}
+
+h1 {
+        color: #BF3B3B ;
+        text-align: center; /* Colocar o texto centralizado */
+        text-shadow: 1px 1px 2px #6652408e;
+}
+
+h2 {
+        color: #8C2B2B;
+}
+p {
+    text-align: justify;
+}

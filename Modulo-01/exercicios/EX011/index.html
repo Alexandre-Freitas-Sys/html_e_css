@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Trabalhando com imagens Dinâmicas</h1>
+    <p>Configurando imagens para alterar de acordo com o tamanho da tela em uso.</p>
+
+    <h3>Imagem Modelo:</h3>
+
+        <!-- **** CONFIGURANDO IMAGEM DA MENOR PARA MAIOR **** -->
+    <picture>
+        <source media="(max-width: 650px )" srcset="imagens/foto-p.png" type="image/png"> <!--** IMAGEM ALTERNATIVA ** -->
+        <source media="(max-width: 950px )" srcset="imagens/foto-m.png" type="image/png"> <!--** IMAGEM ALTERNATIVA ** -->
+        <img src="imagens/foto-g.png" alt="imagem flexivel"> <!--** IMAGEM PRINCIPAL ** -->
+    </picture>
+    <br> ou esta configuração:
+    <br>
+    <!-- **** CONFIGURANDO IMAGEM DA MAIOR PARA MENOR **** -->
+    <picture>
+        <source media="(min-width: 950px )" srcset="imagens/foto-g.png" type="image/png"> <!--** IMAGEM ALTERNATIVA ** -->
+        <source media="(min-width: 650px )" srcset="imagens/foto-m.png" type="image/png"> <!--** IMAGEM ALTERNATIVA ** -->
+        <img src="imagens/foto-p.png" alt="Imagem modelo"> <!--** IMAGEM PRINCIPAL ** -->
+    </picture>
+
+    <h1>Reproduzir áudio no site</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio controls src="audio/Summer.mp3" type="audio/mpeg"> </audio>
+   
+    <!-- ou a linha de comando abaixo para varios suportes de audio  -->
+
+    <audio controls autoplay>
+        <source src="audio/Summer.mp3" type="audio/mpeg">
+        <source src="audio/Summer.ogg" type="audio/ogg">
+        <source src="audio/Summer.wav" type="audio/wav"> <!-- NÃO RECOMENDADO USAR .WAV -->
+
+    </audio>
+</body>
+</html>

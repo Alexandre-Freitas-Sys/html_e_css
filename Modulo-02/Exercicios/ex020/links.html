@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* OBSERVAÇÕES:  
+        .    Seletores Personalizados:
+                #   =   id
+                .   =   class
+                :   =   pseudo-class
+                ::  =   pseudo-element
+                >   =   clidren "Filho"
+        
+        */
+
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        a{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-decoration: none;
+            color: darkgreen;
+        }
+
+        a:active{
+            color: goldenrod;
+        }
+        a:visited{  /* Utilizando Pseud-class no conteudo*/
+            color: blue;
+        }
+
+        a:hover{    /* Utilizando Pseud-class no conteudo*/
+            color: darkorange;
+            text-decoration: overline underline;
+        }
+
+        .destaque{  /* Utilizando Class para personalizar o conteudo*/
+            background-color: brown;
+            color: rgb(255, 255, 255);
+        }
+
+        .destaque::before{   /* Utilizando Pseud-element antes do conteudo*/
+            content: '✔ ';
+        }
+
+        .destaque::after{   /* Utilizando Pseud-element apos do conteudo*/
+            content: '  ☁';
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Personalizando Links</h1>
+
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank" class="destaque">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+    
+</body>
+</html>
